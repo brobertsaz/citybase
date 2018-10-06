@@ -28,6 +28,7 @@ gem 'puma', '~> 3.7'
 group :development, :test do
   gem 'jazz_fingers'
   gem 'rspec-rails'
+  gem 'dotenv-rails'
 end
 
 group :test do
