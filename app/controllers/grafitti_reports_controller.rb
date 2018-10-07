@@ -1,6 +1,7 @@
 class GrafittiReportsController < ApplicationController
   def create_report
-    GrafittiReport.generate_report(report_params)
+    @report = GrafittiReport.generate_report(report_params)
+    render json: @report
   end
 
   private
