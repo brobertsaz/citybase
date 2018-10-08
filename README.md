@@ -1,6 +1,48 @@
 # README
+This repo can work as a standalone API or can be used with separate VueJS frontend located at https://github.com/brobertsaz/citybase-web
 
-Challange (RoR):
+# SETUP
+
+1. Clone the repo:
+```
+git clone git@github.com:brobertsaz/citybase_api.git
+```
+2. CD into the citybase_api directory
+3. You should be prompted to install the correct version of ruby if you have RVM or RBENV installed
+4. Install gems
+```
+bundle
+```
+
+## Testing
+
+To run the rspec tests, run:
+```
+rspec spec
+```
+
+## Using the API
+
+To start the server, run
+```
+rails s
+```
+
+Routes:
+```
+GET  /grafitti_reports/create_report
+```
+
+Example params for search
+```
+{
+  name: 'Pawar',
+  search_date: '09/2018'
+}
+```
+
+
+### Challange (RoR):
 
 Residents of Chicago can request graffiti removal through 311. Your task is to build a tool for reporting on graffiti removal requests by ward and month. Your tool should interact with the City of Chicago’s data API to retrieve the information needed.
 Requirements
